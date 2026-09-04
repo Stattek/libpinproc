@@ -2,13 +2,13 @@
 ### CMake settings
 ###
 # Version 2.8.1 was released 2010-03-16 and is a reasonable minimum.
-cmake_minimum_required(VERSION 2.8.1)
+cmake_minimum_required(VERSION 3.5)
 
 # allow relative paths in link_directories()
 # see https://cmake.org/cmake/help/v3.18/policy/CMP0081.html
-if(POLICY CMP0081)
-	cmake_policy(SET CMP0081 OLD)
-endif()
+# if(POLICY CMP0081)
+# 	cmake_policy(SET CMP0081 OLD)
+# endif()
 
 ###
 ### Project settings
