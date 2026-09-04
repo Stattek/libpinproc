@@ -19,7 +19,7 @@ $(LIBPINPROC): $(OBJS)
 	$(RANLIB) $@
 
 $(LIBPINPROC_DYLIB): $(OBJS)
-	g++ -dynamiclib -o $@ `pkg-config --libs libftdi1` $(LDFLAGS) $(OBJS)
+	g++ -dynamiclib -o $@ `pkg-config --libs libftdi` $(LDFLAGS) $(OBJS)
 
 .cpp.o:
 	$(CC) $(LIBPINPROC_CFLAGS) $(CFLAGS) -o $@ $<
